@@ -1,4 +1,6 @@
-package Arrays;
+package Arrays.High;
+
+import Arrays.High.HighArray;
 
 public class HighArrayApp {
 

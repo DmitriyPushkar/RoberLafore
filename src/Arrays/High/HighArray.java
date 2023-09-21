@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.High;
 
 public class HighArray {
     private long[] arr;
