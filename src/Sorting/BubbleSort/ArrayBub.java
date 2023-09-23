@@ -20,21 +20,21 @@ public void display(){
     System.out.println();
 }
 public void bubbleSort(){
- int outer;
- int inner;
- for(outer=nElems-1; outer>1; outer--){
-     for(inner=0; inner<outer; inner++){
-         if(arr[inner]>arr[inner+1]){
-             swap(inner, inner+1);
-         }
-     }
- }
+        int outer;
+        int inner;
+        for(outer=nElems-1; outer>1;outer--){
+            for(inner=0; inner<outer; inner++){
+                if(arr[inner]>arr[inner+1]){
+                    swap(inner,inner+1);
+                }
+            }
+        }
 }
-private void swap(int one, int two){
+public void swap(int index1, int index2){
         long temp;
-        temp=arr[one];
-        arr[one]=arr[two];
-        arr[two]=temp;
-};
+        temp=arr[index1];
+        arr[index1]=arr[index2];
+        arr[index2]=temp;
+}
 }
 
