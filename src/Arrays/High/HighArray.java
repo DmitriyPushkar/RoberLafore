@@ -43,5 +43,18 @@ public class HighArray {
         }
         System.out.println();
     }
+    public void removeMax(){
+        int i=0;
+        if(nElems==0){
+        }else{
+            long max=arr[i];
+        for(i=0; i<nElems; i++){
+            if(max<arr[i]){
+                max=arr[i];
+            }
+        }
+            delete(max);
+        }
 
-}
+
+}}

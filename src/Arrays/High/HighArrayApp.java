@@ -12,7 +12,7 @@ public class HighArrayApp {
         arr.insert(44);
         arr.insert(55);
         arr.insert(66);
-        arr.insert(77);
+        arr.insert(200);
         arr.insert(88);
         arr.insert(99);
         arr.insert(100);
@@ -31,6 +31,10 @@ public class HighArrayApp {
         arr.delete(44);
 
         arr.display();
+        arr.removeMax();
+        arr.display();
+        HighArray SortedArr=new HighArray(100);
+
 
     }
 }
