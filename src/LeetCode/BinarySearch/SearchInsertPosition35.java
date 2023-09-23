@@ -1,6 +1,6 @@
 package LeetCode.BinarySearch;
 
-public class SearchInsertPosition {
+public class SearchInsertPosition35 {
     public static int searchInsert(int[] nums, int target) {
         int lowerBound=0;
         int upperBound=nums.length-1;
