@@ -2,21 +2,21 @@ package Stack;
 
 public class StackX {
     private int maxSize;
-    private long [] stackArray;
+    private char[] stackArray;
     private int top;
 
     public StackX(int s){
         maxSize=s;
-        stackArray=new long[maxSize];
+        stackArray=new char[maxSize];
         top=-1;
     }
-    public long push(long value){
+    public long push(char value){
         return stackArray[++top]=value;
     }
-    public long pop(){
+    public char pop(){
         return stackArray[top--];
     }
-    public long peek(){
+    public char peek(){
         return stackArray[top];
     }
     public boolean isEmpty(){
