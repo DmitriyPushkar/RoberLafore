@@ -15,7 +15,6 @@ public class BubbleSortApp {
         arr.insert(33);
         arr.insert(22);
         arr.insert(11);
-        arr.insert(10);
 
         arr.display();
 

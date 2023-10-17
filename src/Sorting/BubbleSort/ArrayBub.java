@@ -20,12 +20,12 @@ public void display(){
     System.out.println();
 }
 public void bubbleSort(){
-        int outer;
-        int inner;
-        for(outer=nElems-1; outer>1;outer--){
-            for(inner=0; inner<outer; inner++){
-                if(arr[inner]>arr[inner+1]){
-                    swap(inner,inner+1);
+        int in;
+        int out;
+        for(out=nElems-1; out>=1; out--){
+            for(in=1; in<nElems; in++){
+                if(arr[in]<arr[in-1]){
+                    swap(in,in-1);
                 }
             }
         }

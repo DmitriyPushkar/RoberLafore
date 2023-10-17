@@ -1,4 +1,4 @@
-package Stack;
+package Stack.brackets;
 
 public class StackX {
     private int maxSize;
@@ -10,8 +10,8 @@ public class StackX {
         stackArray=new char[maxSize];
         top=-1;
     }
-    public long push(char value){
-        return stackArray[++top]=value;
+    public void push(char value){
+         stackArray[++top]=value;
     }
     public char pop(){
         return stackArray[top--];

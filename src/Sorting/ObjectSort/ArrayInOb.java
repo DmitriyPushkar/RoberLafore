@@ -19,16 +19,16 @@ public class ArrayInOb {
 
     }
     public void insertionSort(){
-        int inner;
-        int outer;
-        for(outer=1; outer<nElems; outer++){
-            Person temp=arr[outer];
-            inner=outer;
-            while (inner>0 && arr[inner-1].getLast().compareTo(temp.getLast())>0){
-            arr[inner]=arr[inner-1];
-            --inner;
-            }
-            arr[inner]=temp;
-        }
+     int in;
+     int out;
+     for(out=1;out<nElems;out++){
+         Person temp=arr[out];
+         in=out;
+         while(in>0&&arr[in-1].getLast().compareTo(temp.getLast())>0){
+             arr[in]=arr[in-1];
+             --in;
+         }
+         arr[in]=temp;
+     }
     }
 }

@@ -20,17 +20,17 @@ public class ArrayIns {
         System.out.println();
     }
     public void insertionSort() {
-   int outer;
-   int inner;
-   for(outer=1; outer<nElems;outer++){
-       long temp=arr[outer];
-       inner=outer;
-       while(inner>0 && arr[inner-1]>=temp){
-           arr[inner]=arr[inner-1];
-           --inner;
-       }
-       arr[inner]=temp;
-   }
+        int out;
+        int in;
+        for(out=1; out<nElems; out++){
+            long temp=arr[out];
+            in=out;
+            while (in>0&&arr[in-1]>=temp){
+                arr[in]=arr[in-1];
+                --in;
+            }
+            arr[in]=temp;
+        }
     }
 
 }

@@ -19,19 +19,21 @@ public class ArraySel {
         }
         System.out.println();
     }
-   public void selectSort(){
-        int outer;
-        int inner;
-        int min;
-        for(outer=0; outer<nElems-1; outer++){
-            min=outer;
-            for(inner=outer+1; inner<nElems; inner++){
-                if(arr[min]>arr[inner]){
-                    min=inner;
+   public void selectSort() {
+    int out;
+    int in;
+    int min;
+    for(out=0; out<nElems-1; out++){
+        min=out;
+        for(in=out+1;in<nElems; in++){
+            if(arr[min]>arr[in]){
+                min=in;
             }
-                swap(outer, min);
+            swap(out,min);
         }
-   }}
+    }
+
+    }
     public void swap(int index1, int index2){
         long temp;
         temp=arr[index1];
