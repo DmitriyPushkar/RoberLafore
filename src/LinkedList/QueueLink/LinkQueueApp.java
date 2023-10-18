@@ -1,6 +1,8 @@
 package LinkedList.QueueLink;
 
 
+import java.util.LinkedList;
+
 public class LinkQueueApp {
     public static void main(String[] args) {
         LinkQueue theStack =new LinkQueue();
@@ -13,5 +15,6 @@ public class LinkQueueApp {
         theStack.remove();
         theStack.remove();
         theStack.displayQueue();
+
     }
 }
