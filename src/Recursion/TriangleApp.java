@@ -5,15 +5,22 @@ public class TriangleApp {
 
     public static void main(String[] args) {
         System.out.println("Enter a number: ");
-        theNumber=2;
+        theNumber=5;
         int theAnswer=triangle(theNumber);
+        System.out.println();
+
         System.out.println("Triangle="+theAnswer);
+
     }
-    public static int triangle(int n){
-        if(n==1){
+    public static int triangle(int n) {
+        System.out.println("Entering: n=" + n);
+        if (n == 1) {
+            System.out.println("Returning 1");
             return 1;
         }
-        return (n+triangle(n-1));
+        int temp = (n + triangle(n - 1));
+        System.out.println("Returning " + temp);
+        return temp;
     }
 
 }
